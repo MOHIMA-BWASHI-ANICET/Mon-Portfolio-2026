@@ -25,277 +25,94 @@
             </ul>
            </nav>
     </header>
-    <main>
-        <h1>mes projets</h1>
-    </main>
-    <footer>
-    <div>
-            <p>&copy; 2026 Anicet. Tous droits résevés</p>
-        <div>
-        <a href="https://github.com/MOHIMA-BWASHI-ANICET">Github</a>
-        <a href="#">linkedIn</a>
-        <a href="#">X</a>
-        </div>
-       </div> 
-    </footer>
 </body>
 </html>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Portfolio - Anicet Mohima</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-        }
+<!-- LIAISON CSS -->
+<link rel="stylesheet" href="style.css">
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            color: #6c63ff;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        nav a.active {
-            color: #6c63ff;
-            border-bottom: 2px solid #6c63ff;
-        }
-
-        .section {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .section h2 {
-            color: #6c63ff;
-            font-size: 30px;
-        }
-
-        .line {
-            width: 50px;
-            height: 3px;
-            background: #6c63ff;
-            margin: 10px auto;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            padding: 30px 50px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 15px;
-            text-align: left;
-        }
-
-        .card h3 {
-            color: #6c63ff;
-        }
-
-        .tags span {
-            display: inline-block;
-            background: #eee;
-            padding: 5px 10px;
-            border-radius: 15px;
-            margin: 5px 5px 0 0;
-            font-size: 12px;
-        }
-
-        .links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: black;
-            font-size: 14px;
-        }
-
-        footer {
-            background: linear-gradient(90deg, #6c63ff, #4facfe);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer .icons {
-            margin-top: 10px;
-        }
-
-        footer .icons span {
-            margin: 0 10px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
-
-<header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#" class="active">Projets</a>
-        <a href="#">Passions</a>
-        <a href="#">Divertissement</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
-
 <section class="section">
-    <h2>Mes Réalisations</h2>
+    <h2>Mes Projets</h2>
     <div class="line"></div>
 </section>
 
-<div class="grid">
+<div class="grid" id="projects"></div>
 
-    <div class="card">
-        <img src="https://picsum.photos/400/200?1">
-        <div class="card-content">
-            <h3>Site E-commerce</h3>
-            <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript.</p>
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-            </div>
-            <div class="links">
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/400/200?2">
-        <div class="card-content">
-            <h3>Gestionnaire de Tâches</h3>
-            <p>Application web pour organiser ses projets quotidiens.</p>
-            <div class="tags">
-                <span>Python</span>
-                <span>Flask</span>
-            </div>
-            <div class="links">
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/400/200?3">
-        <div class="card-content">
-            <h3>Blog Personnel</h3>
-            <p>Projet en cours pour apprendre le backend avec Laravel.</p>
-            <div class="tags">
-                <span>PHP</span>
-                <span>Laravel</span>
-            </div>
-            <div class="links">
-                <a href="#">Code</a>
-                <a href="#">Bientôt</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/400/200?4">
-        <div class="card-content">
-            <h3>Dashboard d'Analyse</h3>
-            <p>Visualisation de données avec Python et Matplotlib.</p>
-            <div class="tags">
-                <span>Python</span>
-                <span>Data</span>
-            </div>
-            <div class="links">
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/400/200?5">
-        <div class="card-content">
-            <h3>Application Météo</h3>
-            <p>Application utilisant une API météo en temps réel.</p>
-            <div class="tags">
-                <span>JavaScript</span>
-                <span>API</span>
-            </div>
-            <div class="links">
-                <a href="#">Code</a>
-                <a href="#">Démo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://picsum.photos/400/200?6">
-        <div class="card-content">
-            <h3>Maquette Mobile UI</h3>
-            <p>Design moderne pour une application mobile fitness.</p>
-            <div class="tags">
-                <span>Figma</span>
-                <span>Design</span>
-            </div>
-            <div class="links">
-                <a href="#">Design</a>
-                <a href="#">Aperçu</a>
-            </div>
-        </div>
-    </div>
-
-</div>
+<button class="btn">Voir plus</button>
 
 <footer>
-    <p>© 2026 Anicet Mohima. Tous droits réservés.</p>
+    <p>© 2026 Anicet Mohima Bwashi</p>
     <div class="icons">
-        <span>🔗</span>
+        <span>🌐</span>
         <span>💼</span>
-        <span>❌</span>
+        <span>📧</span>
+        <a href="#">linkedIn</a>
+        <a href="#">X</a>
     </div>
 </footer>
+
+<script>
+
+/* PROJETS */
+const projects = [
+    "E-commerce",
+    "Gestionnaire",
+    "Blog",
+    "Dashboard",
+    "Météo",
+    "UI Design"
+];
+
+const container = document.getElementById("projects");
+
+/* CREATION DES CARTES */
+projects.forEach((title, index) => {
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <img src="https://picsum.photos/400/200?random=${index}">
+        <div class="card-content">
+            <h3>${title}</h3>
+            <p>Projet moderne développé avec différentes technologies.</p>
+            <div class="tags">
+                <span>Web</span>
+                <span>Dev</span>
+            </div>
+            <div class="links">
+                <a href="#">Code</a>
+                <a href="#">Démo</a>
+            </div>
+        </div>
+    `;
+
+    container.appendChild(card);
+});
+
+/* ANIMATION SCROLL */
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        const screen = window.innerHeight;
+
+        if(position < screen - 100){
+            card.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
