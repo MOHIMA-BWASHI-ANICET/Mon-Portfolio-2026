@@ -25,20 +25,89 @@
             </ul>
            </nav>
     </header>
-      <main>
-        <h1><contactez-nous>
-      </main>
-    <footer>
-    <div>
-            <p>&copy; 2026 Anicet. Tous droits résevés</p>
-        <div>
-        <a href="https://github.com/MOHIMA-BWASHI-ANICET">Github</a>
-        <a href="#">linkedIn</a>
-        <a href="#">X</a>
+    </body>
+</html>           
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Anicet Mohima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lien vers CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<main class="contact-section">
+    <h1>Contactez-moi</h1>
+
+    <div class="contact-container">
+
+        <!-- Infos -->
+        <div class="contact-info">
+            <h2>Mes informations</h2>
+            <p><i class="fa fa-user"></i> Anicet Mohima</p>
+            <p><i class="fa fa-phone"></i> 0834400275</p>
+            <p><i class="fa fa-whatsapp"></i> Disponible sur WhatsApp</p>
+            <p><i class="fa fa-map-marker-alt"></i> Lubumbashi</p>
+
+            <a href="https://wa.me/243834400275" target="_blank" class="whatsapp-btn">
+                Discuter sur WhatsApp
+            </a>
         </div>
-       </div> 
-    </footer>
+
+        <!-- Formulaire -->
+        <div class="contact-form">
+            <h2>Envoyer un message</h2>
+            <form id="contactForm">
+                
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input type="text" id="nom" placeholder="Votre nom" value="Anicet Mohima" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Téléphone</label>
+                    <input type="tel" id="telephone" placeholder="Ex: 0990000000" required>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Anicet Mohima - Tous droits réservés</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nom = document.getElementById("nom").value.trim();
+    let tel = document.getElementById("telephone").value.trim();
+
+    if(nom === "" || tel === ""){
+        alert("Veuillez remplir tous les champs !");
+        return;
+    }
+
+    let message = `Bonjour, je suis ${nom}. Mon numéro est ${tel}.`;
+
+    let whatsappURL = "https://wa.me/243834400275?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
+
 </body>
 </html>
-
-
